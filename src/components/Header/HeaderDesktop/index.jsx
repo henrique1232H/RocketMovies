@@ -1,4 +1,5 @@
 import Input from "../../Input";
+import Perfil from "../Perfil";
 import { Container } from "./style";
 
 
@@ -10,13 +11,7 @@ export default function HeaderDesktop() {
 
             <Input placeholder="Pesquisar pelo título"/>
 
-            <div>
-                <div>
-                    <h2>Nome</h2>
-                    <button>sair</button>
-            </div>
-                <img src="https://github.com/henrique1232H.png" alt="" />
-            </div>
+            <Perfil />
 
         </Container>
     )
