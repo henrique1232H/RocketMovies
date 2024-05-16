@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.main`
     width: min(129rem, 90%);
-    margin: 2rem auto 0 auto;
+    margin: 5rem auto 0 auto;
 
     h1 {
         font-size: 3.2rem;
@@ -12,7 +12,7 @@ export const Container = styled.main`
 
 export const Cards = styled.div`
     margin-top: 2rem;
-    height: 50rem;
+    height: 46rem;
     overflow-y: scroll;
     scrollbar-color: ${({theme}) => theme.COLOR.PINK};
 

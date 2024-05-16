@@ -12,7 +12,23 @@ export default createGlobalStyle`
         cursor: pointer;
     }
 
+    body {
+        background: ${({theme}) => theme.COLOR.BACKGROUND};
+    }
+
     :root {
         font-size: 62.5%;
     }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+
+::-webkit-scrollbar-thumb {
+  background: ${({theme}) => theme.COLOR.PINK}; 
+  height: 10px;
+  border-radius: 15px;
+}
+
 `

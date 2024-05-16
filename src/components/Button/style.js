@@ -8,6 +8,10 @@ export const Container = styled.button`
     display: flex;
     align-items: center;
     gap: 1rem;
+    transition: background 200ms ease-in-out;
 
+    &:hover {
+        background: rgba(255,133,155,0.7);
+    }
 
 `

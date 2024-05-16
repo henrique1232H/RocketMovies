@@ -12,16 +12,19 @@ export default function Card({title, text}) {
             <h2>{title}</h2>
 
             <div>
-                <FaRegStar />
+                <FaStar />
+                <FaStar />
                 <FaStar />
                 <FaRegStar />
-                <FaStar />
                 <FaRegStar />
             </div>
 
             <p>{text}</p>
 
             <div>
+
+                <span>Fiçção Cientifica</span>
+                <span>Drama</span>
 
             </div>
         
