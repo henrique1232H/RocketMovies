@@ -6,8 +6,11 @@ export default function ButtonBack() {
 
     return (
         <Container>
-            <IoMdArrowBack />
-            Voltar
+            <a href="/">
+                <IoMdArrowBack />
+                Voltar
+
+            </a>
         </Container>
     )
 }

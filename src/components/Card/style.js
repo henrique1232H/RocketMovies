@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
-export const Container = styled.button`
+export const Container = styled.a`
+
 
     width: 100%;
-    height: 22.285rem;
+    max-height: 22.285rem;
     padding: 3.2rem;
     border-radius: 10px;
     margin-top: 1rem;
+    text-decoration: none;
 
 
     background: rgba(255,133,155,0.1);

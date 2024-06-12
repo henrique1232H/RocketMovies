@@ -8,7 +8,7 @@ export default function Brand() {
         <Container>
             <h1>Meus filmes</h1>
 
-            <Button title="Adicionar filme" icon={FiPlus}/>
+            <Button title="Adicionar filme" icon={FiPlus} anchor href='/createMovie'/>
         </Container>
     )
 }

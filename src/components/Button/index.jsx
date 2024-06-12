@@ -2,12 +2,20 @@
 import { Container } from "./style";
 
 
-export default function Button({title, icon: Icon}) {
+export default function Button({title, icon: Icon, anchor, href }) {
 
-    return (
+    return (    
         <Container>
             <Icon/>
-            {title}
+            {anchor ?
+                <a href={href}>
+                    {title}
+                </a>
+
+                :
+                {title}
+            }
+
         </Container>
     )
 }

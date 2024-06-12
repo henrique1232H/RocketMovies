@@ -10,6 +10,11 @@ export const Container = styled.button`
     gap: 1rem;
     transition: background 200ms ease-in-out;
 
+    > a {
+        text-decoration: none;
+        color: ${({theme}) => theme.COLOR.BLACK};
+    }
+
     &:hover {
         background: rgba(255,133,155,0.7);
     }
