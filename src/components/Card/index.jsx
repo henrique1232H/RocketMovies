@@ -46,7 +46,7 @@ export default function Card({title, text, href, tags,star}) {
 
             <div>
                 {
-                    tags.map(entries => {
+                   tags && tags.map(entries => {
 
                         return <span key={value++}> {entries}</span>
                     })

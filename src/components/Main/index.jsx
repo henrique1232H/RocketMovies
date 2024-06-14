@@ -7,7 +7,7 @@ import { Container, Cards } from "./style";
 export default function Main() {
 
     const array = [
-        {title: 'alo', text: 'aa', href: '1', tags: [], star: 4},
+        {title: 'alo', text: 'aa', href: '1', star: 4},
 
         {
             title: 'alo', 
