@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
     background: ${({theme}) => theme.COLOR.BACKGROUND};
 
-    
+
+
     > div h1 {
         color: ${({theme}) => theme.COLOR.WHITE};
         margin: 2.4rem 0 4rem 0;
@@ -53,7 +54,7 @@ export const Form = styled.form`
         resize: none;
      }
     
-     h2 {
+     > h2 {
         margin:4rem 0  2.4rem 0;
         color: ${({theme}) => theme.COLOR.GRAY};
         font-size: 2rem;

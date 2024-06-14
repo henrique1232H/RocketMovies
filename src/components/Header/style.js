@@ -11,6 +11,10 @@ export const Container = styled.header`
         font-size: 2.4rem;
         color: ${({theme}) => theme.COLOR.PINK};
     }
+
+    h2 {
+        color: #fff;
+    }
     
     > div:nth-child(1) {
         display: none;
@@ -68,7 +72,11 @@ export const Desktop = styled.div`
 
     }
 
-    
+    span button {
+        background: none;
+        border: none;
+        color: ${({theme}) => theme.COLOR.GRAY_500};
+    }
     
     
     `
