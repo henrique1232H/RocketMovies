@@ -2,16 +2,22 @@
 import { SrOnly } from "../../styles/class";
 import { Container } from "./style";
 
-export default function Input({type,placeholder, ...rest}) {
+export default function Input({type,placeholder,icon: Icon,...rest}) {
 
     return (
-        <>
+        <Container>
+
             <SrOnly> {placeholder} </SrOnly>
-            <Container 
-            type={type} 
+
+
+            {Icon && <Icon size={20}/>}
+
+            <input
+            type={type}
+            
             placeholder={placeholder} 
             {...rest}
             />
-        </>
+        </Container>
     )
 }

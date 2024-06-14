@@ -3,6 +3,7 @@ import { Container, Desktop, Mobile } from "./style";
 import Input from "../Input";
 
 import { IoIosMenu } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 
 export default function Header() {
@@ -28,7 +29,9 @@ export default function Header() {
                         <button>sair</button>
                     </span>
 
-                    <img src="https://github.com/henrique1232H.png" alt="" />
+                    <Link to='/perfil'>
+                        <img src="https://github.com/henrique1232H.png" alt="" />
+                    </Link>
                 </div>
 
             </Desktop>

@@ -8,14 +8,17 @@ import { FaStar } from "react-icons/fa";
 export default function Card({title, text, href, tags,star}) {
 
     let value = 0
-    let starArray = []
+    let starArray = [];
+    let regArray = [];
 
 
     for(let i = 1; i <= star;i++) {
         starArray = [i, ...starArray];
     }
 
-    console.log(starArray)
+    for(let i = 5; i > star; i--) {
+        regArray = [i, ...regArray];
+    }
 
     return (
         <Container href={`/moviePreview/${href}`}>
@@ -30,10 +33,13 @@ export default function Card({title, text, href, tags,star}) {
                     })
                 }
 
+                {
+                    regArray.map(entries => {
+                        return <FaRegStar key={entries}/>
+                    })
+                }
                     
-                
-                <FaRegStar />
-                <FaRegStar />
+            
             </div>
 
             <p>{text}</p>
