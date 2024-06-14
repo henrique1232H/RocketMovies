@@ -4,6 +4,7 @@ export const Container = styled.div`
     background: ${({theme}) => theme.COLOR.BACKGROUND_100};
     height: 5rem;
     padding: 3rem 2rem;
+    width: 100%;
     color: ${({theme}) => theme.COLOR.WHITE};
     border: none;
     border-radius: 1rem;

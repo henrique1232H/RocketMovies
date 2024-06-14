@@ -12,7 +12,7 @@ export default function Main() {
         {
             title: 'alo', 
             text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias impedit dolorum dicta odit ullam laudantium nostrum itaque adipisci laborum ducimus beatae, illum odio. Optio similique iste possimus excepturi esse unde?',
-            tags: ["Ação", "Comedia"],
+            tags: ["Ação", "Comedia", "Drama", "Biografia"],
             href: '2',
             star: 3}
     ]

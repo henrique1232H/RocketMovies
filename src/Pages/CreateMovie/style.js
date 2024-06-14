@@ -23,8 +23,21 @@ export const Form = styled.form`
         display: flex;
         gap: 2rem;
 
-        input {
+        > div {
             width: 100%;
+        }
+     }
+
+     > div:nth-child(5) {
+        display: flex;
+        gap: 2rem;
+        margin-top: 2rem;
+
+        > button {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
      }
 
@@ -46,4 +59,15 @@ export const Form = styled.form`
         font-size: 2rem;
      }
 
+`
+
+export const DivMarket = styled.div`
+    width: 100%;
+    background: #0D0C0F;
+    height: 8.8rem;
+    border-radius: 1rem;
+    gap: 2rem;
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
 `

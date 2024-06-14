@@ -1,9 +1,12 @@
-import { Container, Form } from "./style";
+import { Container, Form, DivMarket } from "./style";
 import Header from "../../components/Header"
 import Line from "../../components/Line"
 import { ResponsiveScale } from "../../styles/class";
 import ButtonBack from "../../components/ButtonBack";
 import Input from "../../components/Input"; 
+import Market from "../../components/Market";
+import Button from "../../components/Button"
+
 
 export default function CreateMovie() {
 
@@ -34,13 +37,15 @@ export default function CreateMovie() {
 
                     <h2>Marcadores</h2>
 
+                    <DivMarket>
+                        <Market title="Nova nota" isNew/>
+                        <Market title="Nova nota"/>
+                    </DivMarket>
+
+
                     <div>
-
-                    </div>
-
-
-                    <div>
-                        
+                        <Button title="Excluir filme" black type="delete"/>
+                        <Button title="Salvar Alterações" />
                     </div>
 
 

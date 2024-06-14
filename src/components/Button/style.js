@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.button`
-    background: ${({theme}) => theme.COLOR.PINK};
+    background: ${({theme, black}) => black ? theme.COLOR.BLACK : theme.COLOR.PINK};
     border: none;
     padding: 1.8rem 3.2rem;
     border-radius: 10px;
@@ -9,10 +9,11 @@ export const Container = styled.button`
     align-items: center;
     gap: 1rem;
     transition: background 200ms ease-in-out;
+    color: ${({theme, black}) => black ? theme.COLOR.PINK : theme.COLOR.BLACK};
 
     > a {
         text-decoration: none;
-        color: ${({theme}) => theme.COLOR.BLACK};
+        color: ${({theme, black}) => black ? theme.COLOR.PINK : theme.COLOR.BLACK};
     }
 
     &:hover {

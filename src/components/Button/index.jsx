@@ -2,10 +2,10 @@
 import { Container } from "./style";
 
 
-export default function Button({title, icon: Icon, anchor, href, ...rest }) {
+export default function Button({title, icon: Icon, anchor, href, black,...rest }) {
 
     return (    
-        <Container {...rest}>
+        <Container black={black} {...rest}>
             {
                 Icon && <Icon  size="20"/>
             }
